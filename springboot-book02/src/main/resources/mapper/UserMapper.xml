@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootbook02.mapper.UserMapper">
+
+    <resultMap id="userToClassify" type="com.example.springbootbook02.entity.User">
+        <result property="uId" column="u_id" />
+        <result property="uName" column="u_name" />
+        <result property="uPwd" column="u_pwd" />
+        <collection property="classifyList" javaType="ArrayList" ofType="com.example.springbootbook02.entity.Classify">
+            <result property="cId" column="c_id" />
+            <result property="cCname" column="c_cname" />
+            <result property="uId" column="u_id" />
+        </collection>
+    </resultMap>
+
+    <select id="getUserToClassify" resultMap="userToClassify">
+        select *
+        from user u,classify c where u.u_id = #{id} and c.u_id = #{id};
+    </select>
+
+
+</mapper>

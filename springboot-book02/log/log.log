@@ -1,0 +1,47 @@
+2022-07-27 00:03:01.292  INFO 14680 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-27 00:03:01.297  INFO 14680 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-27 00:03:01.309  INFO 14680 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-27 00:03:10.933  INFO 6040 --- [main] c.e.s.SpringbootBook02Application        : Starting SpringbootBook02Application on LAPTOP-O1PI2PNQ with PID 6040 (C:\Users\XXK\Desktop\谢小康2004080408\谢小康2004080408\springboot-book02\target\classes started by XXK in C:\Users\XXK\Desktop\谢小康2004080408\谢小康2004080408\springboot-book02)
+2022-07-27 00:03:10.937  INFO 6040 --- [main] c.e.s.SpringbootBook02Application        : No active profile set, falling back to default profiles: default
+2022-07-27 00:03:11.741  INFO 6040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-27 00:03:11.748  INFO 6040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-27 00:03:11.749  INFO 6040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-27 00:03:11.750  INFO 6040 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-07-27 00:03:11.750  INFO 6040 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-07-27 00:03:11.750  INFO 6040 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-27 00:03:11.755  INFO 6040 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-07-27 00:03:11.835  INFO 6040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-27 00:03:11.835  INFO 6040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 860 ms
+2022-07-27 00:03:13.272  INFO 6040 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 00:03:13.468  INFO 6040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-27 00:03:13.475  INFO 6040 --- [main] c.e.s.SpringbootBook02Application        : Started SpringbootBook02Application in 2.966 seconds (JVM running for 8.453)
+2022-07-27 00:03:20.925  INFO 6040 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-27 00:03:20.926  INFO 6040 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-27 00:03:20.933  INFO 6040 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-07-27 00:03:20.970  INFO 6040 --- [http-nio-9090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-27 00:03:21.730  INFO 6040 --- [http-nio-9090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-27 00:03:52.529  INFO 6040 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-27 00:03:52.530  INFO 6040 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-27 00:03:52.537  INFO 6040 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-27 00:04:45.264  INFO 3616 --- [main] c.e.s.SpringbootBook02Application        : Starting SpringbootBook02Application on LAPTOP-O1PI2PNQ with PID 3616 (C:\Users\XXK\Desktop\谢小康2004080408\谢小康2004080408\springboot-book02\target\classes started by XXK in C:\Users\XXK\Desktop\谢小康2004080408\谢小康2004080408\springboot-book02)
+2022-07-27 00:04:45.267  INFO 3616 --- [main] c.e.s.SpringbootBook02Application        : No active profile set, falling back to default profiles: default
+2022-07-27 00:04:46.118  INFO 3616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-27 00:04:46.127  INFO 3616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-27 00:04:46.128  INFO 3616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-07-27 00:04:46.129  INFO 3616 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2022-07-27 00:04:46.130  INFO 3616 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-07-27 00:04:46.130  INFO 3616 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-27 00:04:46.136  INFO 3616 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2022-07-27 00:04:46.223  INFO 3616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-27 00:04:46.223  INFO 3616 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 917 ms
+2022-07-27 00:04:47.655  INFO 3616 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 00:04:47.861  INFO 3616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-27 00:04:47.872  INFO 3616 --- [main] c.e.s.SpringbootBook02Application        : Started SpringbootBook02Application in 3.039 seconds (JVM running for 8.611)
+2022-07-27 00:05:53.563  INFO 3616 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-27 00:05:53.563  INFO 3616 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-27 00:05:53.568  INFO 3616 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-27 00:05:53.658  INFO 3616 --- [http-nio-9090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-27 00:05:54.476  INFO 3616 --- [http-nio-9090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-27 00:14:20.187  INFO 3616 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-27 00:14:20.188  INFO 3616 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-27 00:14:20.194  INFO 3616 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

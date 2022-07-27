@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootbook02.mapper.ClassifyMapper">
+
+    <resultMap id="classifyToBook" type="com.example.springbootbook02.entity.Classify">
+        <result property="cId" column="c_id" />
+        <result property="cCname" column="c_cname" />
+        <result property="uId" column="u_id" />
+        <collection property="bookList" javaType="ArrayList" ofType="com.example.springbootbook02.entity.Book">
+            <result property="bId" column="b_id" />
+            <result property="bName" column="b_name" />
+            <result property="bPublisher" column="b_publisher" />
+            <result property="bIsbn" column="b_id" />
+            <result property="bPrice" column="b_price" />
+            <result property="cId" column="c_id" />
+        </collection>
+    </resultMap>
+
+    <select id="getClassifyToBook" resultMap="classifyToBook">
+        select *
+        from classify c,book b where c.c_id = #{id} and b.c_id = #{id};
+    </select>
+</mapper>
