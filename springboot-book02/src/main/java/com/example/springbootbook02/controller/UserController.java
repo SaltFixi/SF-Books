@@ -100,19 +100,21 @@ public class UserController {
     // 用自己写的mapper通过id查询
     @GetMapping("allById")
     public Result<?> getUserClassifyBookList2(@RequestParam(defaultValue = "") Long id) {
-        User userToClassify = userMapper.getUserToClassify(id);
+       if (userToClassify == null) {
+            userToClassify = userMapper.selectById(id);
+        } else {
+            List<Classify> classifyList = userToClassify.getClassifyList();
 
-        List<Classify> classifyList = userToClassify.getClassifyList();
-
-        List<Classify> arr = new ArrayList();
-        for (Classify classify : classifyList) {
-            // 通过user的uid与classify的外键uid找到分类对应的图书信息最后将对应的所有图书信息存在arr中
-            if (userToClassify.getUId() == classify.getUId()) {
-                Classify classifyToBook = classifyMapper.getClassifyToBook(classify.getCId());
-                arr.add(classifyToBook);
+            List<Classify> arr = new ArrayList<>();
+            for (Classify classify : classifyList) {
+                // 通过user的uid与classify的外键uid找到分类对应的图书信息最后将对应的所有图书信息存在arr中
+                if (userToClassify.getUId() == classify.getUId()) {
+                    Classify classifyToBook = classifyMapper.getClassifyToBook(classify.getCId());
+                    arr.add(classifyToBook);
+                }
             }
+            userToClassify.setClassifyList(arr);
         }
-        userToClassify.setClassifyList(arr);
 
         return Result.success(userToClassify);
     }
