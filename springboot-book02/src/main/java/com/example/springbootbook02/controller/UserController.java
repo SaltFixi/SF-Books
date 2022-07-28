@@ -100,6 +100,8 @@ public class UserController {
     // 用自己写的mapper通过id查询
     @GetMapping("allById")
     public Result<?> getUserClassifyBookList2(@RequestParam(defaultValue = "") Long id) {
+       User userToClassify = userMapper.getUserToClassify(id);
+        
        if (userToClassify == null) {
             userToClassify = userMapper.selectById(id);
         } else {
